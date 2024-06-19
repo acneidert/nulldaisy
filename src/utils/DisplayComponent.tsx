@@ -10,6 +10,8 @@ type DisplayComponentProps = {
   description?: string
   code: string
   states?: string
+  onShowCode?: () => void
+  onShowPreview?: () => void
 }
 
 type tabs = 'preview' | 'code'
@@ -18,6 +20,16 @@ class DisplayComponent extends Nullstack<DisplayComponentProps> {
 
   active: tabs = 'preview'
   codeElement
+
+  handleShowCode({ onShowCode }) {
+    this.active = 'code'
+    if (onShowCode && typeof onShowCode === 'function') onShowCode()
+  }
+
+  handleShowPreview({ onShowPreview }) {
+    this.active = 'preview'
+    if (onShowPreview && typeof onShowPreview === 'function') onShowPreview()
+  }
 
   render({ children, name, description, code, states }: NullstackClientContext<DisplayComponentProps>) {
     return (
@@ -33,7 +45,7 @@ class DisplayComponent extends Nullstack<DisplayComponentProps> {
           <li>
             <button
               class={this.active === 'preview' ? 'text-emerald-500 hover:underline' : 'hover:underline'}
-              onclick={() => (this.active = 'preview')}
+              onclick={this.handleShowPreview}
             >
               Preview
             </button>
@@ -41,7 +53,7 @@ class DisplayComponent extends Nullstack<DisplayComponentProps> {
           <li>
             <button
               class={this.active === 'code' ? 'text-emerald-500 hover:underline' : 'hover:underline'}
-              onclick={() => (this.active = 'code')}
+              onclick={this.handleShowCode}
             >
               Code
             </button>

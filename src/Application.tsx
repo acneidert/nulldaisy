@@ -1,6 +1,7 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
 
 import '../tailwind.css'
+import AlertDocs from './components/AlertDocs'
 import ButtonDocs from './components/ButtonDocs'
 import DropdownDocs from './components/DropdownDocs'
 import ModalDocs from './components/ModalDocs'
@@ -37,12 +38,16 @@ class Application extends Nullstack {
               <li class={current === '/modal' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
                 <a href="/modal">Modal</a>
               </li>
+              <li class={current === '/alert' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
+                <a href="/alert">Alert</a>
+              </li>
             </ul>
             <div class="flex overscroll-contain overflow-y-auto h-[90vh] grow w-full">
               <ButtonDocs route="/button" />
               <SwapDocs route="/swap" />
               <DropdownDocs route="/dropdown" />
               <ModalDocs route="/modal" />
+              <AlertDocs route="/alert" />
             </div>
           </div>
         </div>

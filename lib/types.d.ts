@@ -15,3 +15,6 @@ export { Dropdown } from './components/dropdown'
 
 export type { SwapProps, SwapVariants } from './components/swap/types'
 export { Swap } from './components/swap'
+
+export type { AlertProps, AlertVariants } from './components/alert/types'
+export { Alert } from './components/alert'
