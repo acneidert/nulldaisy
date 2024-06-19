@@ -1,0 +1,16 @@
+{
+  "name": "nulldaisy",
+  "version": "1.0.0",
+  "module": "index.ts",
+  "types": "types.d.ts",
+  "license": "MIT",
+  "peerDependencies": {
+    "nullstack": ">=0.16.0"
+  },
+  "dependencies": {
+    "daisyui": "^4.12.2"
+  },
+  "devDependencies": {
+    "tailwind-variants": "^0.2.1"
+  }
+}
