@@ -56,6 +56,7 @@ type CodeProps = {
   class?: string
   name: string
   states?: string
+  onlyCode?: boolean
 }
 
 class Code extends Nullstack<CodeProps> {
@@ -71,16 +72,21 @@ class Code extends Nullstack<CodeProps> {
     class: klass,
     name,
     states = '',
+    onlyCode = false,
   }: NullstackClientContext<CodeProps>) {
-    this._newCode = `
-    class ${pascalCase(replaceAccentsChars(`${name} Example`))} extends Nullstack {
-      ${states}
-      render(){
-        return (
-          ${code}
-        )
-      }
-    }`
+    if (!onlyCode) {
+      this._newCode = `
+      class ${pascalCase(replaceAccentsChars(`${name} Example`))} extends Nullstack {
+        ${states}
+        render(){
+          return (
+            ${code}
+          )
+        }
+      }`
+    } else {
+      this._newCode = code
+    }
     if (format) {
       try {
         this._newCode = prettier.format(this._newCode, {
