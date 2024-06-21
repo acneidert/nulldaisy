@@ -7,17 +7,16 @@ import { dropdownContentVariants, dropdownVariants } from './styles'
 export type DropdownVariants = VariantProps<typeof dropdownVariants>
 export type DropdownContentVariants = VariantProps<typeof dropdownContentVariants>
 
-export type DropdownProps<T = any> = DropdownVariants & {
-  children: NullstackNode
+export type DropdownProps = DropdownVariants & {
   class?: string
-} & T
+}
 
-export type DropdownContentProps<T = any> = DropdownContentVariants & {
+export type DropdownContentProps = DropdownContentVariants & {
   children: NullstackNode
   class?: string
-} & T
+}
 
-export type DropdownTriggerProps<T = any> = {
+export type DropdownTriggerProps = {
   children: NullstackNode
   class?: string
-} & T
+}

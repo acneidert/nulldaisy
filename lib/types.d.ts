@@ -11,6 +11,7 @@ export type {
   DropdownContentVariants,
   DropdownTriggerProps,
 } from './components/dropdown/types'
+
 export { Dropdown } from './components/dropdown'
 
 export type { SwapProps, SwapVariants } from './components/swap/types'
