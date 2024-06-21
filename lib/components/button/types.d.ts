@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from 'nullstack'
 
 import { VariantProps } from 'tailwind-variants'
 
-import { buttonVariants } from './style'
+import { buttonVariants } from './styles'
 
 export type ButtonVariants = VariantProps<typeof buttonVariants>
 

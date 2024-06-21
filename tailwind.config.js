@@ -14,6 +14,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
+      manrope: ['Manrope', 'Roboto', 'sans-serif'],
       mono: [...defaultTheme.fontFamily.mono],
       roboto: ['Roboto', 'sans-serif'],
       'crete-round': ['Crete Round', 'sans-serif'],

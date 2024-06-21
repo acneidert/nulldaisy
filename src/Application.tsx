@@ -3,6 +3,7 @@ import Nullstack, { NullstackClientContext } from 'nullstack'
 import '../tailwind.css'
 import { Notify } from '../lib'
 import AlertDocs from './components/AlertDocs'
+import AvatarDocs from './components/AvatarDocs'
 import ButtonDocs from './components/ButtonDocs'
 import DropdownDocs from './components/DropdownDocs'
 import ModalDocs from './components/ModalDocs'
@@ -19,7 +20,7 @@ class Application extends Nullstack {
     const current = router.path
 
     return (
-      <body class="bg-zinc-900 text-white">
+      <body class="bg-zinc-900 text-white font-manrope">
         <div class=" flex flex-col h-screen w-screen">
           <div class="flex px-4 bg-zinc-950 py-2">
             <span class="text-4xl font-bold">
@@ -46,6 +47,9 @@ class Application extends Nullstack {
               <li class={current === '/notify' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
                 <a href="/notify">Notify</a>
               </li>
+              <li class={current === '/avatar' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
+                <a href="/avatar">Avatar</a>
+              </li>
             </ul>
             <div class="flex overscroll-contain overflow-y-auto h-[90vh] grow w-full">
               <ButtonDocs route="/button" />
@@ -54,6 +58,7 @@ class Application extends Nullstack {
               <ModalDocs route="/modal" />
               <AlertDocs route="/alert" />
               <NotifyDocs route="/notify" />
+              <AvatarDocs route="/avatar" />
             </div>
           </div>
         </div>

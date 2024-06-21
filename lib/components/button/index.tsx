@@ -1,6 +1,6 @@
 import Nullstack from 'nullstack'
 
-import { buttonVariants } from './style'
+import { buttonVariants } from './styles'
 import { ButtonProps, ButtonVariants } from './types'
 
 export class Button extends Nullstack<ButtonVariants> {

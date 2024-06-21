@@ -22,3 +22,6 @@ export { Alert } from './components/alert'
 
 export type { Notification, NotifyVariants } from './components/notify/types'
 export { Notify } from './components/notify'
+
+export type { AvatarProps, AvatarVariants } from './components/avatar/types'
+export { Avatar } from './components/avatar'
