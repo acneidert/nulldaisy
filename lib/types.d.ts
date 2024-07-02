@@ -28,3 +28,6 @@ export { Avatar } from './components/avatar'
 
 export type { BadgeProps, BadgeVariants } from './components/badge/types'
 export { Badge } from './components/badge'
+
+export type { LinkProps, LinkVariants } from './components/link/types'
+export { Link } from './components/link'
