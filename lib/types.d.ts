@@ -31,3 +31,15 @@ export { Badge } from './components/badge'
 
 export type { LinkProps, LinkVariants } from './components/link/types'
 export { Link } from './components/link'
+
+export type {
+  MenuProps,
+  MenuItemProps,
+  MenuTitleProps,
+  SubmenuProps,
+  MenuVariants,
+  MenuItemVariants,
+  MenuTitleVariants,
+  SubmenuVariants,
+} from './components/menu/types'
+export { Menu } from './components/menu'

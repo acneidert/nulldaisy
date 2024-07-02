@@ -8,6 +8,7 @@ import BadgeDocs from './components/BadgeDocs'
 import ButtonDocs from './components/ButtonDocs'
 import DropdownDocs from './components/DropdownDocs'
 import LinkDocs from './components/LinkDocs'
+import MenuDocs from './components/MenuDocs'
 import ModalDocs from './components/ModalDocs'
 import NotifyDocs from './components/NotifyDocs'
 import SwapDocs from './components/SwapDocs'
@@ -58,6 +59,9 @@ class Application extends Nullstack {
               <li class={current === '/link' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
                 <a href="/link">Link</a>
               </li>
+              <li class={current === '/menu' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
+                <a href="/menu">Menu</a>
+              </li>
             </ul>
             <div class="flex overscroll-contain overflow-y-auto h-[90vh] grow w-full">
               <ButtonDocs route="/button" />
@@ -69,6 +73,7 @@ class Application extends Nullstack {
               <AvatarDocs route="/avatar" />
               <BadgeDocs route="/badge" />
               <LinkDocs route="/link" />
+              <MenuDocs route="/menu" />
             </div>
           </div>
         </div>
