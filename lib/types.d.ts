@@ -25,3 +25,6 @@ export { Notify } from './components/notify'
 
 export type { AvatarProps, AvatarVariants } from './components/avatar/types'
 export { Avatar } from './components/avatar'
+
+export type { BadgeProps, BadgeVariants } from './components/badge/types'
+export { Badge } from './components/badge'

@@ -4,6 +4,7 @@ import '../tailwind.css'
 import { Notify } from '../lib'
 import AlertDocs from './components/AlertDocs'
 import AvatarDocs from './components/AvatarDocs'
+import BadgeDocs from './components/BadgeDocs'
 import ButtonDocs from './components/ButtonDocs'
 import DropdownDocs from './components/DropdownDocs'
 import ModalDocs from './components/ModalDocs'
@@ -50,6 +51,9 @@ class Application extends Nullstack {
               <li class={current === '/avatar' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
                 <a href="/avatar">Avatar</a>
               </li>
+              <li class={current === '/badge' ? 'hover:underline text-emerald-500' : 'hover:underline'}>
+                <a href="/badge">Badge</a>
+              </li>
             </ul>
             <div class="flex overscroll-contain overflow-y-auto h-[90vh] grow w-full">
               <ButtonDocs route="/button" />
@@ -59,6 +63,7 @@ class Application extends Nullstack {
               <AlertDocs route="/alert" />
               <NotifyDocs route="/notify" />
               <AvatarDocs route="/avatar" />
+              <BadgeDocs route="/badge" />
             </div>
           </div>
         </div>
