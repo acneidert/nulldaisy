@@ -13,4 +13,5 @@ export interface ModalProps<T = any> extends DialogHTMLAttributes<T>, ModalVaria
 export type commomProps = {
   children?: NullstackNode
   class?: string
+  static?: boolean
 }

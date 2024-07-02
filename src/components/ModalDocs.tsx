@@ -45,7 +45,6 @@ class ModalDocs extends Nullstack {
                   </Button>
                 </Modal.Action>
               </Modal.Content>
-              <Modal.Backdrop />
             </Modal>
             </div>`}
         >
@@ -61,7 +60,49 @@ class ModalDocs extends Nullstack {
                 </Button>
               </Modal.Action>
             </Modal.Content>
-            <Modal.Backdrop />
+          </Modal>
+        </DisplayComponent>
+        <DisplayComponent
+          name="Backdrop Static"
+          states={`
+                handleShowModal({instances}: NullstackClientContext) {
+                  const modal: Modal = instances['modal'];
+                  modal.show();
+                }
+
+                handleHideModal({instances}: NullstackClientContext) {
+                  const modal: Modal = instances['modal'];
+                  modal.hide();
+                }
+            `}
+          code={`<div>
+            <Button onclick={this.handleShowModal}>
+              Open Modal
+            </Button>
+            <Modal key="modal" static>
+              <Modal.Content>
+                <p>Modal Content</p>
+                <Modal.Action>
+                  <Button onclick={this.handleHideModal}>
+                    Close
+                  </Button>
+                </Modal.Action>
+              </Modal.Content>
+            </Modal>
+            </div>`}
+        >
+          <Button onclick={this.handleShowModal} data-modal="modal-backdrop">
+            Open Modal
+          </Button>
+          <Modal key="modal-backdrop" static>
+            <Modal.Content>
+              <p>Modal Content</p>
+              <Modal.Action>
+                <Button onclick={this.handleHideModal} data-modal="modal-backdrop">
+                  Close
+                </Button>
+              </Modal.Action>
+            </Modal.Content>
           </Modal>
         </DisplayComponent>
         <DisplayComponent
@@ -90,7 +131,6 @@ class ModalDocs extends Nullstack {
                   </Button>
                 </Modal.Action>
               </Modal.Content>
-              <Modal.Backdrop />
             </Modal>
             </div>`}
         >
@@ -106,7 +146,6 @@ class ModalDocs extends Nullstack {
                 </Button>
               </Modal.Action>
             </Modal.Content>
-            <Modal.Backdrop />
           </Modal>
         </DisplayComponent>
         <DisplayComponent
@@ -135,7 +174,6 @@ class ModalDocs extends Nullstack {
                   </Button>
                 </Modal.Action>
               </Modal.Content>
-              <Modal.Backdrop />
             </Modal>
             </div>`}
         >
@@ -151,7 +189,6 @@ class ModalDocs extends Nullstack {
                 </Button>
               </Modal.Action>
             </Modal.Content>
-            <Modal.Backdrop />
           </Modal>
         </DisplayComponent>
       </Doc>

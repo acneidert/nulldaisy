@@ -36,13 +36,19 @@ export class Modal extends Nullstack<ModalProps> {
     )
   }
 
-  render({ open, position, class: klass, children }: NullstackClientContext<ModalProps>) {
+  render({
+    open,
+    static: backdropStatic = false,
+    position,
+    class: klass,
+    children,
+  }: NullstackClientContext<ModalProps>) {
     return (
       <dialog class={modalVariants({ open, position, class: klass })} ref={this.modalElement}>
         {children}
+        {!backdropStatic && <Modal.Backdrop />}
       </dialog>
     )
   }
 
 }
-
