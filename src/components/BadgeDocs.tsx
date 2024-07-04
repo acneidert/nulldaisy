@@ -1,6 +1,7 @@
 import Nullstack from 'nullstack'
 
-import { Badge } from '../../lib'
+import { Badge } from 'daisyui'
+
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'
 

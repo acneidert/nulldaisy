@@ -1,9 +1,25 @@
 {
   "name": "nulldaisy",
-  "version": "1.0.0",
+  "description": "Nullstack components library based on Daisyui",
+  "version": "0.0.1",
   "module": "index.ts",
   "types": "types.d.ts",
+  "author": "Andre Neidert <acneidert@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/acneidert/nulldaisy.git",
+    "type": "git",
+    "directory": "src/lib"
+  },
+  "keywords": [
+    "nullstack",
+    "ui",
+    "components",
+    "ui-kit",
+    "library",
+    "frontend",
+    "design"
+  ],
   "peerDependencies": {
     "nullstack": ">=0.16.0"
   },

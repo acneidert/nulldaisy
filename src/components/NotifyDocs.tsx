@@ -1,6 +1,7 @@
 import Nullstack from 'nullstack'
 
-import { Button, Notify } from '../../lib'
+import { Button, Notify } from 'daisyui'
+
 import Code from '../utils/Code'
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'

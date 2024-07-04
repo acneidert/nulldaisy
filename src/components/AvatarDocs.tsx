@@ -1,6 +1,7 @@
 import Nullstack from 'nullstack'
 
-import { Avatar } from '../../lib'
+import { Avatar } from 'daisyui'
+
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'
 

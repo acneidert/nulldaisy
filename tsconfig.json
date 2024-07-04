@@ -2,6 +2,10 @@
   "compilerOptions": {
     "strict": false,
     "noImplicitAny": false,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "daisyui": ["lib"]
+    }
   }
 }

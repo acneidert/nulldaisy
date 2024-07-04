@@ -1,6 +1,7 @@
 import Nullstack from 'nullstack'
 
-import { Link } from '../../lib'
+import { Link } from 'daisyui'
+
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'
 

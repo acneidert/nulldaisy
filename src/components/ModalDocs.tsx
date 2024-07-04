@@ -1,6 +1,7 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
 
-import { Button, Modal } from '../../lib'
+import { Button, Modal } from 'daisyui'
+
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'
 

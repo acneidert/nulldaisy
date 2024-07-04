@@ -1,5 +1,10 @@
 {
   "extends": "plugin:nullstack/recommended",
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
   "rules": {
     "nullstack/prettier": [
       "warn",
