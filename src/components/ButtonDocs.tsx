@@ -1,6 +1,6 @@
 import Nullstack from 'nullstack'
 
-import { Button } from 'daisyui'
+import { Button } from 'nulldaisy'
 
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'

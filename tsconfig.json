@@ -3,9 +3,9 @@
     "strict": false,
     "noImplicitAny": false,
     "jsx": "preserve",
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "daisyui": ["lib"]
+      "nulldaisy": ["./lib/index.ts"]
     }
   }
 }

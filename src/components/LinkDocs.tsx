@@ -1,6 +1,6 @@
 import Nullstack from 'nullstack'
 
-import { Link } from 'daisyui'
+import { Link } from 'nulldaisy'
 
 import DisplayComponent from '../utils/DisplayComponent'
 import Doc from '../utils/Doc'

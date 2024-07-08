@@ -15,14 +15,14 @@ function customClient(...args) {
     },
   })
   if (!config.resolve.plugins) config.resolve.plugins = []
-  config.resolve.plugins.push(new TsconfigPathsPlugin({}))
+  config.resolve.plugins.push(new TsconfigPathsPlugin())
   return config
 }
 
 function customServer(...args) {
   const config = server(...args)
   if (!config.resolve.plugins) config.resolve.plugins = []
-  config.resolve.plugins.push(new TsconfigPathsPlugin({}))
+  config.resolve.plugins.push(new TsconfigPathsPlugin())
   return config
 }
 
