@@ -4,6 +4,9 @@
   "description": "",
   "author": "",
   "license": "ISC",
+  "_moduleAliases": {
+    "@docs/*": "src/*"
+  },
   "devDependencies": {
     "daisyui": "^4.12.2",
     "eslint-import-resolver-typescript": "^3.6.1",

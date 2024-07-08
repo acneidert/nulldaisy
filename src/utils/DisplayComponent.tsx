@@ -2,8 +2,8 @@ import Nullstack, { NullstackClientContext } from 'nullstack'
 
 // import { HLJSApi } from 'highlight.js'
 import slugify from 'slugify'
-
 import Code from './Code'
+
 
 type DisplayComponentProps = {
   name: string

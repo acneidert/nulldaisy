@@ -1,33 +1,3 @@
-// export default function Code({ code, format = true, language = 'javascript', class: klass, name, states = '' }) {
-//   let newCode = `class ${pascalCase(replaceAccentsChars(`${name} Example`))} extends Nullstack {
-//       ${states}
-//        render(){
-//          return (
-//           ${code}
-//          )
-//        }
-//   }`
-//   if (format) {
-//     newCode = prettier.format(newCode, {
-//       parser: 'babel',
-//       plugins: [parserBabel],
-//     })
-//   }
-
-//   let isCopyped = false
-
-//   const handleClick = () => {
-//     navigator.clipboard.writeText(newCode)
-//     isCopyped = true
-//     setTimeout(() => {
-//       isCopyped = false
-//     }, 300)
-//   }
-
-//   const html = hljs.highlightAuto(newCode, [language]).value
-
-// }
-
 import hljs from 'highlight.js'
 import 'highlight.js/styles/github-dark.css'
 import parserBabel from 'prettier/parser-babel'

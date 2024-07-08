@@ -1,9 +1,8 @@
 import Nullstack from 'nullstack'
 
+import DisplayComponent from '@docs/utils/DisplayComponent'
+import Doc from '@docs/utils/Doc'
 import { Link } from 'nulldaisy'
-
-import DisplayComponent from '../utils/DisplayComponent'
-import Doc from '../utils/Doc'
 
 class LinkDocs extends Nullstack {
 

@@ -1,9 +1,8 @@
 import Nullstack from 'nullstack'
 
+import DisplayComponent from '@docs/utils/DisplayComponent'
+import Doc from '@docs/utils/Doc'
 import { Alert, Button } from 'nulldaisy'
-
-import DisplayComponent from '../utils/DisplayComponent'
-import Doc from '../utils/Doc'
 
 class AlertDocs extends Nullstack {
 

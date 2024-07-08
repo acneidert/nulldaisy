@@ -1,9 +1,8 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
 
+import DisplayComponent from '@docs/utils/DisplayComponent'
+import Doc from '@docs/utils/Doc'
 import { Button, Modal } from 'nulldaisy'
-
-import DisplayComponent from '../utils/DisplayComponent'
-import Doc from '../utils/Doc'
 
 class ModalDocs extends Nullstack {
 

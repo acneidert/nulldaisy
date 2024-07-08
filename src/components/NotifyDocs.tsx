@@ -1,10 +1,9 @@
 import Nullstack from 'nullstack'
 
+import Code from '@docs/utils/Code'
+import DisplayComponent from '@docs/utils/DisplayComponent'
+import Doc from '@docs/utils/Doc'
 import { Button, Notify } from 'nulldaisy'
-
-import Code from '../utils/Code'
-import DisplayComponent from '../utils/DisplayComponent'
-import Doc from '../utils/Doc'
 
 class NotifyDocs extends Nullstack {
 

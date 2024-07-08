@@ -1,7 +1,8 @@
 import Nullstack, { NullstackClientContext } from 'nullstack'
 
 import '../tailwind.css'
-import { Notify } from '../lib'
+import { Notify } from 'nulldaisy'
+
 import AlertDocs from './components/AlertDocs'
 import AvatarDocs from './components/AvatarDocs'
 import BadgeDocs from './components/BadgeDocs'
