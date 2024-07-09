@@ -20,5 +20,5 @@ module.exports = {
       'crete-round': ['Crete Round', 'sans-serif'],
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui'), require('tailwindcss-animated')],
 }

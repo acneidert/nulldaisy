@@ -2,13 +2,34 @@ import Nullstack from 'nullstack'
 
 import DisplayComponent from '@docs/utils/DisplayComponent'
 import Doc from '@docs/utils/Doc'
+import Sandbox, { Props } from '@docs/utils/Sandbox'
 import { Link } from 'nulldaisy'
 
 class LinkDocs extends Nullstack {
 
   render() {
+    const PROPS: Props = {
+      children: { value: 'Link', description: 'The content of the Link (can be a string or a component)' },
+      color: {
+        value: 'primary',
+        options: [
+          { name: 'Default', value: '' },
+          { name: 'Primary', value: 'primary' },
+          { name: 'Secondary', value: 'secondary' },
+          { name: 'Accent', value: 'accent' },
+          { name: 'Success', value: 'success' },
+          { name: 'Info', value: 'info' },
+          { name: 'Warning', value: 'warning' },
+          { name: 'Error', value: 'error' },
+        ],
+        description: 'The color of the Link',
+      },
+
+      hover: { value: false, description: 'Adds a hover effect' },
+    }
     return (
       <Doc name="Link" description="Link is used to navigate to another page.">
+        <Sandbox element={Link} props={PROPS} />
         <DisplayComponent name="Default" code={`<Link >Default</Link>`}>
           <Link>Default</Link>
         </DisplayComponent>

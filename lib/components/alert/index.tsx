@@ -26,7 +26,7 @@ export class Alert extends Nullstack<AlertProps> {
     this.initiate({})
   }
 
-  initiate({ timeout }: any) {
+  hydrate({ timeout }: any) {
     if (timeout) {
       setTimeout(() => {
         this.hide({})

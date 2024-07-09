@@ -1,16 +1,11 @@
 export type { ButtonProps, ButtonVariants } from './components/button/types'
+export { buttonVariants } from './components/button/styles'
 export { Button } from './components/button'
 
 export type { ModalProps, ModalVariants } from './components/modal/types'
 export { Modal } from './components/modal'
 
-export type {
-  DropdownProps,
-  DropdownContentProps,
-  DropdownVariants,
-  DropdownContentVariants,
-  DropdownTriggerProps,
-} from './components/dropdown/types'
+export type { DropdownProps, DropdownContentProps, DropdownTriggerProps } from './components/dropdown/types'
 
 export { Dropdown } from './components/dropdown'
 

@@ -1,0 +1,21 @@
+.growing-input {
+  display: inline-grid;
+}
+
+.growing-input .dummy,
+.growing-input input {
+  grid-area: 1 / 1;
+  
+  /* Following properties just need to be consistent,
+  to ensure the .dummy and the input take up the same space */
+  font: inherit;
+  padding: 0 0.25em;
+  margin: 0;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+.growing-input .dummy {
+  visibility: hidden;
+  white-space: pre-wrap;
+}

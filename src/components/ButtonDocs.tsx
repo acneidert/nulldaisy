@@ -2,13 +2,50 @@ import Nullstack from 'nullstack'
 
 import DisplayComponent from '@docs/utils/DisplayComponent'
 import Doc from '@docs/utils/Doc'
+import Sandbox, { Props } from '@docs/utils/Sandbox'
 import { Button } from 'nulldaisy'
 
 class ButtonDocs extends Nullstack {
 
   render() {
+    const PROPS: Props = {
+      children: { value: 'Button', description: 'The content of the Button, (can be a string or a component)' },
+      color: {
+        value: 'primary',
+        options: [
+          { name: 'Default', value: '' },
+          { name: 'Primary', value: 'primary' },
+          { name: 'Secondary', value: 'secondary' },
+          { name: 'Accent', value: 'accent' },
+          { name: 'Info', value: 'info' },
+          { name: 'Success', value: 'success' },
+          { name: 'Warning', value: 'warning' },
+          { name: 'Error', value: 'error' },
+        ],
+        description: 'The color of the Button or unset to default',
+      },
+      size: {
+        value: 'md',
+        options: [
+          { name: 'Extra Small', value: 'xs' },
+          { name: 'Small', value: 'sm' },
+          { name: 'Medium', value: 'md' },
+          { name: 'Large', value: 'lg' },
+        ],
+        description: 'The size of the Button',
+      },
+
+      outline: { value: false, description: 'Adds an outline' },
+      active: { value: false, description: 'Adds an active state' },
+      disabled: { value: false, description: 'Adds a disabled state' },
+      glass: { value: false, description: 'Adds a glass effect' },
+      noAnimation: { value: false, description: 'Removes the animation' },
+      square: { value: false, description: 'Set as a square' },
+      circle: { value: false, description: 'Set as a circle' },
+    }
     return (
       <Doc name="Button" description="Buttons allow the user to take actions or make choices.">
+        <Sandbox element={Button} props={PROPS} />
         <DisplayComponent name="Base" code="<Button>Button</Button>">
           <Button>Button</Button>
         </DisplayComponent>

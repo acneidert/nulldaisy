@@ -2,13 +2,48 @@ import Nullstack from 'nullstack'
 
 import DisplayComponent from '@docs/utils/DisplayComponent'
 import Doc from '@docs/utils/Doc'
+import Sandbox, { Props } from '@docs/utils/Sandbox'
 import { Badge } from 'nulldaisy'
 
 class BadgeDocs extends Nullstack {
 
   render() {
+    const PROPS: Props = {
+      children: { value: 'Badge', description: 'The content of the Badge (can be a string or a component)' },
+      color: {
+        options: [
+          { name: 'Default', value: '' },
+          { name: 'Info', value: 'info' },
+          { name: 'Success', value: 'success' },
+          { name: 'Warning', value: 'warning' },
+          { name: 'Error', value: 'error' },
+          { name: 'Neutral', value: 'neutral' },
+          { name: 'Primary', value: 'primary' },
+          { name: 'Secondary', value: 'secondary' },
+          { name: 'Accent', value: 'accent' },
+          { name: 'Ghost', value: 'ghost' },
+        ],
+        value: 'info',
+        description: 'The color of the Badge',
+      },
+
+      size: {
+        options: [
+          { name: 'Default', value: '' },
+          { name: 'Extra Small', value: 'xs' },
+          { name: 'Small', value: 'sm' },
+          { name: 'Medium', value: 'md' },
+          { name: 'Large', value: 'lg' },
+        ],
+        value: '',
+        description: 'The size of the Badge',
+      },
+
+      outline: { value: false, description: 'Adds an outline' },
+    }
     return (
       <Doc name="Badge" description="Badges are used to inform the user of the status of specific data.">
+        <Sandbox element={Badge} props={PROPS} />
         <DisplayComponent name="Base" code={`<Badge>Badge</Badge>`}>
           <Badge>Badge</Badge>
         </DisplayComponent>

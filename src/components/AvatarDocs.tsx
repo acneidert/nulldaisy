@@ -7,6 +7,7 @@ import { Avatar } from 'nulldaisy'
 class AvatarDocs extends Nullstack {
 
   render() {
+    
     return (
       <Doc
         name="Avatar"

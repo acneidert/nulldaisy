@@ -2,6 +2,7 @@ import Nullstack from 'nullstack'
 
 import DisplayComponent from '@docs/utils/DisplayComponent'
 import Doc from '@docs/utils/Doc'
+import Sandbox from '@docs/utils/Sandbox'
 import { Alert, Button } from 'nulldaisy'
 
 class AlertDocs extends Nullstack {
@@ -12,6 +13,7 @@ class AlertDocs extends Nullstack {
     setInterval(() => {
       this.secondsToClose = this.secondsToClose <= 0 ? 0 : this.secondsToClose - 1
     }, 1000)
+    console.log(Alert)
   }
 
   handleResetTimeout({ instances }) {
@@ -20,8 +22,30 @@ class AlertDocs extends Nullstack {
   }
 
   render() {
+    const PROPS = {
+      closable: { value: true, description: 'Adds a close button' },
+      clean: { value: false, description: 'Removes the icon' },
+      children: { value: 'My Message', description: 'The content of the Alert, (can be a string or a component)' },
+      color: {
+        value: 'info',
+        options: [
+          { name: 'Default', value: '' },
+          { name: 'Info', value: 'info' },
+          { name: 'Success', value: 'success' },
+          { name: 'Warning', value: 'warning' },
+          { name: 'Error', value: 'error' },
+        ],
+        description: 'The color of the Alert or unset to default',
+      },
+
+      timeout: {
+        value: 5000,
+        description: 'The time in miliseconds before the alert is closed',
+      },
+    }
     return (
       <Doc name="Alert" description="Alert informs users about important events.">
+        <Sandbox element={Alert} props={PROPS} />
         <DisplayComponent name="Default" code={`<Alert >Default</Alert>`}>
           <Alert>Default</Alert>
         </DisplayComponent>

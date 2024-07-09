@@ -52,7 +52,7 @@ class NotifyDocs extends Nullstack {
           </div>
         </div>
         <DisplayComponent
-          name="Default"
+          name="Top Right"
           states="handleAddTopRight() {
                     Notify.notify({
                       message: 'Top Right',
@@ -63,7 +63,7 @@ class NotifyDocs extends Nullstack {
           code={`<Button onclick={this.handleAddTopRight}>Default</Button>`}
         >
           <Button onclick={this.handleAddNotify} data={{ message: 'Top Right', position: 'top-right' }}>
-            Default
+            Top Right
           </Button>
         </DisplayComponent>
         <DisplayComponent
@@ -96,21 +96,7 @@ class NotifyDocs extends Nullstack {
             Top Left
           </Button>
         </DisplayComponent>
-        <DisplayComponent
-          name="Bottom Center"
-          states="handleAddBottomCenter() {
-                    Notify.notify({
-                      message: 'Bottom Center',
-                      position: 'bottom-center',
-                      duration: 3000,
-                    })
-                  }"
-          code={`<Button onclick={this.handleAddBottomCenter}>Bottom Center</Button>`}
-        >
-          <Button onclick={this.handleAddNotify} data-message="Bottom Center" data-position="bottom-center">
-            Bottom Center
-          </Button>
-        </DisplayComponent>
+        {/* Bottom */}
         <DisplayComponent
           name="Bottom Right"
           states="handleAddBottomRight() {
@@ -127,6 +113,21 @@ class NotifyDocs extends Nullstack {
           </Button>
         </DisplayComponent>
         <DisplayComponent
+          name="Bottom Center"
+          states="handleAddBottomCenter() {
+                    Notify.notify({
+                      message: 'Bottom Center',
+                      position: 'bottom-center',
+                      duration: 3000,
+                    })
+                  }"
+          code={`<Button onclick={this.handleAddBottomCenter}>Bottom Center</Button>`}
+        >
+          <Button onclick={this.handleAddNotify} data-message="Bottom Center" data-position="bottom-center">
+            Bottom Center
+          </Button>
+        </DisplayComponent>
+        <DisplayComponent
           name="Bottom Left"
           states="handleAddBottomLeft() {
                     Notify.notify({
@@ -139,6 +140,26 @@ class NotifyDocs extends Nullstack {
         >
           <Button onclick={this.handleAddNotify} data-message="Bottom Left" data-position="bottom-left">
             Bottom Left
+          </Button>
+        </DisplayComponent>
+        {/* Middle */}
+        <DisplayComponent
+          name="Middle Right"
+          states="handleAddMiddleRight() { Notify.notify({ message: 'Middle Right', position: 'middle-right', duration: 3000 }) }"
+          code={`<Button onclick={this.handleAddMiddleRight}>Middle Right</Button>`}
+        >
+          <Button onclick={this.handleAddNotify} data-message="Middle Right" data-position="middle-right">
+            Middle Right
+          </Button>
+        </DisplayComponent>
+        <DisplayComponent
+          name="Middle Left"
+          states="handleAddMiddleLeft() { Notify.notify({ message: 'Middle Left', position: 'middle-left', duration: 3000 }) }"
+          code={`<Button onclick={this.handleAddMiddleLeft}>Middle Left</Button>`}
+          className=""
+        >
+          <Button onclick={this.handleAddNotify} data-message="Middle Left" data-position="middle-left">
+            Middle Left
           </Button>
         </DisplayComponent>
         <DisplayComponent

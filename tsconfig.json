@@ -4,8 +4,10 @@
     "noImplicitAny": false,
     "jsx": "preserve",
     "baseUrl": "./",
+    "moduleResolution": "Node",
     "paths": {
-      "nulldaisy": ["lib/index.ts"],
+      "nulldaisy": [/*"lib/index.ts", */ "lib/types.d.ts"],
+      "nulldaisy/*": ["lib/*"],
       "@docs/*": ["src/*"]
     }
   }
